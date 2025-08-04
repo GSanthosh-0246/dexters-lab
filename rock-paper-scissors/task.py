@@ -67,10 +67,12 @@ def gameplay():
 user_games = 0
 computer_games = 0
 draw_games = 0
-continue_game = gameplay()
-while continue_game:
-    print('\n' * 2)
-    print(f'You won = {user_games} times | Lost = {computer_games} times | Draw = {draw_games} times')
+
+def main():
     continue_game = gameplay()
+    while continue_game:
+        print('\n' * 2)
+        print(f'You won = {user_games} times | Lost = {computer_games} times | Draw = {draw_games} times')
+        continue_game = gameplay()
 
 
